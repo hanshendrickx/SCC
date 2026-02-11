@@ -1,0 +1,7 @@
+from django.contrib.auth.decorators import login_required
+
+@login_required
+def parent_view(request):
+    if request.user.profile.role != "parent":
+        return redirect("/")
+    return render(request, "pages/parent.html")

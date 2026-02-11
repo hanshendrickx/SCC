@@ -28,8 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -39,6 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",  # new
     "snippets",  # new
+    "pages",
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,7 @@ ROOT_URLCONF = "tutorial.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -71,6 +71,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "tutorial.wsgi.application"
 
+# Add this if not present
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+]
+
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
