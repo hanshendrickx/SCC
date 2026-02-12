@@ -1,0 +1,93 @@
+JPNB-DYAD Project Tree Generated on 2026-02-12 16:09:15
+Root: C:\Users\hansh\django_sandbox\SCC
+(c) 2024 Hans Hendrickx - MIT License
+In cooperation with v0 AI Assistant
+
+Project Structure Legend:
+📂 - Key Project Directory
+📁 - Regular Directory
+🐍 - Python Source File
+📓 - Jupyter Notebook
+📝 - Markdown File
+📊 - Excel or CSV File
+📄 - PDF File
+📃 - Word Document
+⚙️ - Batch File
+🔧 - JSON or YAML File
+--------------------------------------------------------------------------------
+
+├── 📁 .github/
+│   └── 📁 workflows/
+│       └── 🔧 ci.yml
+├── 📁 .ruff_cache/
+│   └── 📁 0.15.0/
+├── 📁 .venv/
+│   ├── 📁 Lib/
+│   │   └── 📁 site-packages/
+│   └── 📁 Scripts/
+│       ├── ⚙️ activate.bat
+│       ├── 🐍 activate_this.py
+│       ├── ⚙️ deactivate.bat
+│       └── ⚙️ pydoc.bat
+├── 📁 _archive/
+│   ├── 📂 HELPFILES/
+│   └── 📄 manage_PM-add_store.txt
+├── 📁 accounts/
+│   ├── 📁 migrations/
+│   │   └── 🐍 __init__.py
+│   ├── 📁 templates/
+│   │   └── 📁 accounts/
+│   ├── 🐍 __init__.py
+│   ├── 🐍 admin.py
+│   ├── 🐍 apps.py
+│   ├── 🐍 models.py
+│   ├── 🐍 tests.py
+│   ├── 🐍 urls.py
+│   └── 🐍 views.py
+├── 📁 pages/
+│   ├── 📁 migrations/
+│   │   └── 🐍 __init__.py
+│   ├── 📁 templates/
+│   │   ├── 📁 pages/
+│   │   └── 📁 registration/
+│   ├── 🐍 __init__.py
+│   ├── 🐍 admin.py
+│   ├── 🐍 apps.py
+│   ├── 🐍 models.py
+│   ├── 🐍 tests.py
+│   ├── 🐍 urls.py
+│   └── 🐍 views.py
+├── 📁 SCC/
+│   ├── 🐍 __init__.py
+│   ├── 🐍 asgi.py
+│   ├── ⚙️ manage-quick-restart.bat
+│   ├── 📝 README.md
+│   ├── 🐍 settings.py
+│   ├── 🐍 urls.py
+│   └── 🐍 wsgi.py
+├── 📁 snippets/
+│   ├── 📁 migrations/
+│   │   ├── 🐍 0001_initial.py
+│   │   ├── 🐍 0002_alter_snippet_language_alter_snippet_style.py
+│   │   └── 🐍 __init__.py
+│   ├── 🐍 __init__.py
+│   ├── 🐍 admin.py
+│   ├── 🐍 apps.py
+│   ├── 🐍 models.py
+│   ├── 🐍 permissions.py
+│   ├── 🐍 serializers.py
+│   ├── 🐍 tests.py
+│   ├── 🐍 urls.py
+│   └── 🐍 views.py
+├── 📁 templates/
+│   ├── 📁 pages/
+│   └── 📁 registration/
+├── ⚙️ CreateNewVenv.bat
+├── 🐍 Folder_Tree.py
+├── 🐍 main.py
+├── ⚙️ manage-quick-restart.bat
+├── 🐍 manage.py
+├── 📝 README.md
+├── 📝 README_coding.md
+├── 📝 README_gitHELP.md
+└── 📄 requirements.txt
