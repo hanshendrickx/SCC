@@ -1,5 +1,5 @@
 def main():
-    print("Hello from rest-framework-tutorial!")
+    print("Hello from SCC!")
 
 
 if __name__ == "__main__":

@@ -7,4 +7,3 @@ urlpatterns = [
     path("logout/", views.logout_view, name="logout"),
     path("", include("django.contrib.auth.urls")),
 ]
-
