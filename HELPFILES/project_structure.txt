@@ -1,4 +1,4 @@
-JPNB-DYAD Project Tree Generated on 2026-02-12 16:09:15
+JPNB-DYAD Project Tree Generated on 2026-02-13 11:10:13
 Root: C:\Users\hansh\django_sandbox\SCC
 (c) 2024 Hans Hendrickx - MIT License
 In cooperation with v0 AI Assistant
@@ -35,6 +35,7 @@ Project Structure Legend:
 ├── 📁 accounts/
 │   ├── 📁 migrations/
 │   │   └── 🐍 __init__.py
+│   ├── 📁 static/
 │   ├── 📁 templates/
 │   │   └── 📁 accounts/
 │   ├── 🐍 __init__.py
@@ -44,6 +45,9 @@ Project Structure Legend:
 │   ├── 🐍 tests.py
 │   ├── 🐍 urls.py
 │   └── 🐍 views.py
+├── 📂 HELPFILES/
+│   └── 📄 project_structure.txt
+├── 📁 media/
 ├── 📁 pages/
 │   ├── 📁 migrations/
 │   │   └── 🐍 __init__.py
@@ -62,6 +66,8 @@ Project Structure Legend:
 │   ├── 🐍 asgi.py
 │   ├── ⚙️ manage-quick-restart.bat
 │   ├── 📝 README.md
+│   ├── 📝 README_coding.md
+│   ├── 📝 README_gitHELP.md
 │   ├── 🐍 settings.py
 │   ├── 🐍 urls.py
 │   └── 🐍 wsgi.py
@@ -79,15 +85,15 @@ Project Structure Legend:
 │   ├── 🐍 tests.py
 │   ├── 🐍 urls.py
 │   └── 🐍 views.py
+├── 📁 static/
 ├── 📁 templates/
 │   ├── 📁 pages/
 │   └── 📁 registration/
 ├── ⚙️ CreateNewVenv.bat
+├── 🐍 fix_views.py
 ├── 🐍 Folder_Tree.py
 ├── 🐍 main.py
 ├── ⚙️ manage-quick-restart.bat
 ├── 🐍 manage.py
-├── 📝 README.md
-├── 📝 README_coding.md
-├── 📝 README_gitHELP.md
-└── 📄 requirements.txt
+├── 📄 requirements.txt
+└── 📄 requirementslock.txt

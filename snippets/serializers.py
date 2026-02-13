@@ -23,7 +23,7 @@ class SnippetSerializer(serializers.HyperlinkedModelSerializer):
             "language",
             "style",
             "owner",
-            "file",          # <-- added
+            "file",  # <-- added
         )
 
 
