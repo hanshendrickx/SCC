@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User   # <-- ADD THIS
 from rest_framework import generics, permissions, renderers
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -18,11 +18,11 @@ class SnippetHighlight(generics.GenericAPIView):
         return Response(snippet.highlighted)
 
 
-@api_view(['GET'])
+@api_view(["GET"])
 def api_root(request, format=None):
     return Response({
-        'users': reverse('user-list', request=request, format=format),
-        'snippets': reverse('snippet-list', request=request, format=format),
+        "users": reverse("user-list", request=request, format=format),
+        "snippets": reverse("snippet-list", request=request, format=format),
     })
 
 

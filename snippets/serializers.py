@@ -3,11 +3,13 @@ from rest_framework import serializers
 from snippets.models import Snippet
 
 
-class SnippetSerializer(serializers.HyperlinkedModelSerializer):  # new
+class SnippetSerializer(serializers.HyperlinkedModelSerializer):
     owner = serializers.ReadOnlyField(source="owner.username")
-    highlight = serializers.HyperlinkedIdentityField(  # new
+    highlight = serializers.HyperlinkedIdentityField(
         view_name="snippet-highlight", format="html"
     )
+    # 👇 ADD THIS LINE (the field name must match the model field)
+    file = serializers.FileField(allow_null=True, required=False)
 
     class Meta:
         model = Snippet
@@ -21,14 +23,15 @@ class SnippetSerializer(serializers.HyperlinkedModelSerializer):  # new
             "language",
             "style",
             "owner",
-        )  # new
+            "file",          # <-- added
+        )
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):  # new
-    snippets = serializers.HyperlinkedRelatedField(  # new
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    snippets = serializers.HyperlinkedRelatedField(
         many=True, view_name="snippet-detail", read_only=True
     )
 
     class Meta:
         model = User
-        fields = ("url", "id", "username", "snippets")  # new
+        fields = ("url", "id", "username", "snippets")
