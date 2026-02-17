@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Guest Access</h1>
+  <p>You are browsing as a guest. Some features may be limited.</p>
+  <a href="{% url 'emergency:threat' %}" class="emergency-button">Emergency Info</a>
+{% endblock %}

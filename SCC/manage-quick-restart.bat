@@ -1,1 +1,0 @@
-run SCC\manage-quick-restart.bat

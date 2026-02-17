@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Parent Dashboard</h1>
+  <p>Monitor your family's safety and access emergency protocols.</p>
+  <a href="{% url 'emergency:threat' %}" class="emergency-button">Emergency</a>
+{% endblock %}

@@ -1,0 +1,20 @@
+JPNB-DYAD Project Tree Generated on 2026-02-16 16:30:53
+Root: c:\Users\hansh\django_sandbox\SCC\templates
+(c) 2024 Hans Hendrickx - MIT License
+In cooperation with v0 AI Assistant
+
+Project Structure Legend:
+📂 - Key Project Directory
+📁 - Regular Directory
+🐍 - Python Source File
+📓 - Jupyter Notebook
+📝 - Markdown File
+📊 - Excel or CSV File
+📄 - PDF File
+📃 - Word Document
+⚙️ - Batch File
+🔧 - JSON or YAML File
+--------------------------------------------------------------------------------
+
+├── 📁 pages/
+└── 📁 registration/

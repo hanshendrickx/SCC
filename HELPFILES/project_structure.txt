@@ -1,4 +1,4 @@
-JPNB-DYAD Project Tree Generated on 2026-02-13 11:10:13
+JPNB-DYAD Project Tree Generated on 2026-02-17 10:23:26
 Root: C:\Users\hansh\django_sandbox\SCC
 (c) 2024 Hans Hendrickx - MIT License
 In cooperation with v0 AI Assistant
@@ -20,6 +20,7 @@ Project Structure Legend:
 │   └── 📁 workflows/
 │       └── 🔧 ci.yml
 ├── 📁 .ruff_cache/
+│   ├── 📁 0.14.1/
 │   └── 📁 0.15.0/
 ├── 📁 .venv/
 │   ├── 📁 Lib/
@@ -29,8 +30,11 @@ Project Structure Legend:
 │       ├── 🐍 activate_this.py
 │       ├── ⚙️ deactivate.bat
 │       └── ⚙️ pydoc.bat
+├── 📁 __.000start/
+│   ├── ⚙️ 000_manage-quick-restart copy.bat
+│   ├── ⚙️ Clean_CodesETC.bat
+│   └── ⚙️ Create_FolderTree.bat
 ├── 📁 _archive/
-│   ├── 📂 HELPFILES/
 │   └── 📄 manage_PM-add_store.txt
 ├── 📁 accounts/
 │   ├── 📁 migrations/
@@ -45,15 +49,29 @@ Project Structure Legend:
 │   ├── 🐍 tests.py
 │   ├── 🐍 urls.py
 │   └── 🐍 views.py
+├── 📁 emergency/
+│   ├── 📁 migrations/
+│   │   └── 🐍 __init__.py
+│   ├── 📁 templates/
+│   │   └── 📁 emergency/
+│   ├── 🐍 __init__.py
+│   ├── 🐍 admin.py
+│   ├── 🐍 apps.py
+│   ├── 🐍 models.py
+│   ├── 🐍 tests.py
+│   ├── 🐍 urls.py
+│   └── 🐍 views.py
 ├── 📂 HELPFILES/
 │   └── 📄 project_structure.txt
 ├── 📁 media/
 ├── 📁 pages/
+│   ├── 📁 management/
+│   │   ├── 📁 commands/
+│   │   └── 🐍 __init__.py
 │   ├── 📁 migrations/
 │   │   └── 🐍 __init__.py
 │   ├── 📁 templates/
-│   │   ├── 📁 pages/
-│   │   └── 📁 registration/
+│   │   └── 📁 pages/
 │   ├── 🐍 __init__.py
 │   ├── 🐍 admin.py
 │   ├── 🐍 apps.py
@@ -64,10 +82,13 @@ Project Structure Legend:
 ├── 📁 SCC/
 │   ├── 🐍 __init__.py
 │   ├── 🐍 asgi.py
-│   ├── ⚙️ manage-quick-restart.bat
+│   ├── ⚙️ manage.py-create-new-.venv.bat
 │   ├── 📝 README.md
 │   ├── 📝 README_coding.md
+│   ├── 📄 README_coding.pdf
 │   ├── 📝 README_gitHELP.md
+│   ├── 📝 README_SECURITY.md
+│   ├── 📝 READMETomorrow.md
 │   ├── 🐍 settings.py
 │   ├── 🐍 urls.py
 │   └── 🐍 wsgi.py
@@ -87,13 +108,17 @@ Project Structure Legend:
 │   └── 🐍 views.py
 ├── 📁 static/
 ├── 📁 templates/
+│   ├── 📂 HELPFILES/
+│   │   ├── ⚙️ !002Start.bat
+│   │   ├── 🐍 fix_views.py
+│   │   ├── 📄 project_structure.txt
+│   │   └── ⚙️ start.bat
 │   ├── 📁 pages/
-│   └── 📁 registration/
-├── ⚙️ CreateNewVenv.bat
-├── 🐍 fix_views.py
+│   ├── 📁 registration/
+│   └── 📁 This is HOME folder area/
+├── 📁 Varia_Safe/
+│   └── ⚙️ CreateNewVenv.bat
 ├── 🐍 Folder_Tree.py
 ├── 🐍 main.py
-├── ⚙️ manage-quick-restart.bat
 ├── 🐍 manage.py
-├── 📄 requirements.txt
-└── 📄 requirementslock.txt
+└── 📄 requirements.txt

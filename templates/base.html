@@ -1,8 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}SCC Emergency{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+    <style>
+        /* From your baseRESERVEORG */
+        .emergency-button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #ff4444;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .emergency-button:hover {
+            background-color: #cc0000;
+        }
+        /* You can add more global styles here */
+    </style>
+</head>
 <body>
-  <div style="background: yellow; padding: 10px;">BASE TEMPLATE IS LOADING</div>
-  <main>
-    {% block content %}{% endblock %}
-  </main>
-</body>
+    <div style="background: yellow; padding: 10px;">BASE TEMPLATE IS LOADING</div>  <!-- remove later -->
 
+    <header>
+        <nav>
+    <a href="{% url 'about' %}">About</a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+    <!-- Threat link - use the emergency namespace -->
+    <a href="{% url 'emergency:threat' %}">Threat</a>
+</nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    {% block extra_js %}{% endblock %}
+</body>
 </html>

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Adult Emergency Guide</h1>
+  <p>As an adult, you have access to full emergency options.</p>
+  <a href="{% url 'emergency:threat' %}" class="emergency-button">Report Emergency</a>
+{% endblock %}
